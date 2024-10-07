@@ -1470,7 +1470,7 @@
   <!-- END open-source projects -->
 
   <include name="snippets/remove.xml" />
-  <include name="snippets/pixelage.xml" />
+  <include name="snippets/hello.xml" />
   <include name="snippets/lineage.xml" />
 
 </manifest>
