@@ -1,4 +1,4 @@
-Project Pixelage
+HelloOS ROM
 ===========
 
 Getting started
@@ -6,21 +6,21 @@ Getting started
 
 To get started with Android, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
 
-To initialize your local repository using the ProjectPixelage trees, use a command like this:
+To initialize your local repository using the HelloOS-AOSP trees, use a command like this:
 ```
-repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
+repo init -u https://github.com/Fraaxius/android_manifest.git -b Vision --git-lfs
 ```
 Then to sync up:
 ```
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 ```
 
-Building Pixelage
+Building HelloOS
 -------------------
-Export your device codename with PIXELAGE_BUILD
+Export your device codename with HELLO_BUILD (mandatory!)
 
 ```export
-export PIXELAGE_BUILD="codename"
+export HELLO_BUILD="codename"
 ```
 
 Initialize the ROM environment with the envsetup.sh script.
@@ -32,10 +32,10 @@ Initialize the ROM environment with the envsetup.sh script.
 Lunch your device after cloning all device sources if needed.
 
 ```bash
-lunch pixelage_codename-ap3a-buildtype
+lunch hello_codename-ap3a-buildtype
 ```
 
-Start compilation
+And, start the build!
 
 ```bash
 mka bacon
